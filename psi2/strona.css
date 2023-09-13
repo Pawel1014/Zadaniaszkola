@@ -1,0 +1,131 @@
+body{
+
+color:black;
+background-image:url("samolot.JPG");
+background-repeat:repeat-x;
+background-size:400px 400px;
+
+
+}
+
+
+.pojemnik{
+
+
+    display: flex;
+}
+.pojemnik2{
+
+    display: flex;
+}
+.napisy{
+    margin-top:150px;
+    
+    background: rgb(0,23,36);
+    background: linear-gradient(90deg, rgba(0,23,36,1) 0%, rgba(0,28,36,1) 0%, rgba(0,25,36,1) 0%, rgba(8,37,58,1) 0%, rgba(9,61,121,1) 33%, rgba(0,84,255,1) 72%, rgba(9,114,130,1) 99%);
+    height:3em;;
+    width:100%;
+    padding-top:15px;
+    padding-left:20px;
+color:white;
+font-size:35px;
+text-align:auto;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+}
+.srodek{
+   margin-top: 2em;
+   margin-left:3em;
+}
+
+.napisy1{
+    margin-top:32px;
+    margin-left: 40px;
+    background-color:#66ccff;
+    height:250px;
+    width:600px;
+    
+}
+.srodek1{
+
+    margin-left:3em;
+    margin-top: 2em;
+   
+    
+}
+.napisy2{
+
+    margin-top:32px;
+    margin-left: 40px;
+    background-color:#66ccff;
+    height:250px;
+    width:600px;
+
+}
+.podglowek{
+
+color:#8c8c8c;
+background-color:#b3b3b3 ;
+height:6em;;
+    width:100%;
+    padding-top:15px;
+    padding-left:20px;
+}
+
+.napisyv1{
+    margin-top:83px;
+    margin-left:500px;
+    float:right;
+transform:rotate(90deg);
+width: 200px; 
+height: 100px;
+background-color:#66ccff;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+font-size:35px;
+color:black;
+text-align:center;
+
+
+}
+.napisyv2{
+
+    margin-top:83px;
+    margin-left:500px;
+    float:right;
+transform:rotate(90deg);
+width: 200px; 
+height: 100px;
+background-color:#66ccff;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+font-size:35px;
+color:black;
+text-align:center;
+}
+.pos{
+    font-size: 80px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left:100px;
+ 
+ padding-top:10px;
+  font-weight: bold;
+  font-family: Georgia, serif;
+  background: linear-gradient(90deg, rgba(0,23,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,25,36,1) 0%, rgba(43,43,43,1) 0%, rgba(123,115,115,1) 32%, rgba(130,122,122,1) 35%, rgba(148,148,148,1) 58%, rgba(38,37,37,1) 93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:link{
+    color:black;
+}
+a:visited{
+    color:black;
+}
+a:hover{
+    color:black;
+}
+a:active{
+    color:black;
+}
+
+

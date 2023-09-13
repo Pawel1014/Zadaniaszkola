@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1638811348 source:c:\users\oliwi\desktop\rownanie\main.cpp
+	<iostream>
+	<math.h>
+	<cstdlib>
+

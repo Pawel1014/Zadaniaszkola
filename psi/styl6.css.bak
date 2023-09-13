@@ -1,0 +1,63 @@
+.naglowek{
+	
+	color:white;
+	width: 40em;
+	height: 3em;
+	border: 1px solid #0000cc;
+	background-color:#4d4dff;
+	  text-align: center;
+	
+	
+}
+.pojemnik{
+	
+	 display: flex;
+	 margin-left: 610px;
+	
+}
+.srodek{
+	
+	color:white;
+	width: 212px;
+	height: 6em;
+	border: 1px solid #0000cc;
+	background-color:#4d4dff;
+	text-align:center;
+	
+}
+.srodek1{
+	
+	color:white;
+	width: 212px;
+	height: 6em;
+	border: 1px solid #0000cc;
+	background-color:#4d4dff;
+	text-align:center;
+	float:right;
+	
+}
+
+
+
+.srodek2{
+	
+	color:white;
+	width: 212px;
+	height: 6em;
+	border: 1px solid #0000cc;
+	background-color:#4d4dff;
+	text-align:center;
+	float:left;
+	
+}
+.naglowek2{
+	
+	color:white;
+	width: 40em;
+	height: 3em;
+	border: 1px solid #0000cc;
+	background-color:#4d4dff;
+	
+	
+	
+}

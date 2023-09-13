@@ -1,0 +1,100 @@
+#include <iostream>
+#include <cmath>
+#include <conio.h>
+
+using namespace std;
+
+    bool pzero,koniec=false;
+    char rodzaj;
+    int sys_z,sys_na,L1,L1_s,L10,p1;
+    int wynik[10],liczby[10],tabL1[10];
+
+int main()
+{
+    do{
+    pzero=false;
+    sys_z=0,sys_na=0,L10=0,p1=0;
+    for(int i=0;i<10;i++){
+        tabL1[i]=0;
+        wynik[i]=0;
+        liczby[i]=0;
+    }
+
+    cout << "KALKULATOR" << endl << "(p) przeliczanie systemow liczbowych" << endl << "(k) zakoncz program" << endl;
+    cin >> rodzaj;
+    system ("cls");
+    cout << "KALKULATOR" << endl;
+
+    switch (rodzaj){
+        case 'p':
+            cout << "przeliczanie systemow liczbowych" << endl << "z jakiego systemu?(2-10)" << endl;
+            cin >> sys_z;
+
+            if(2<=sys_z && sys_z<=10){}
+            else{
+                cout << "wprowadz prawidlowa wartosc" << endl << "nacisnij klawisz aby kontynuowac";
+                getch();
+                system("cls");
+                break;
+            }
+            cout << "jaka liczbe?" << endl;
+            cin >> L1;
+            L1_s=L1;
+            while(L1>0){
+                while(L1%10!=0){
+                    L1--;
+                    tabL1[p1]++;
+                }
+                L1=L1/10;
+                p1++;
+            }
+            for(int i=0;i<10;i++){
+                if(tabL1[i]>=sys_z){
+                    cout << "wprowadzane cyfry nie moga byc rowne ani wieksze od systemu z ktorego sa przeliczane" << endl << "nacisnij klawisz aby kontynuowac";
+                    getch();
+                    system("cls");
+                    break;
+                }
+                tabL1[i]=tabL1[i]*pow(sys_z,i);
+                L10=L10+tabL1[i];
+            }
+            cout <<  "na jaki system? (2-10)" << endl;
+            cin >> sys_na;
+
+            if(2<=sys_na && sys_na<=10){}
+            else{
+                cout << "wprowadz prawidlowa wartosc" << endl << "nacisnij klawisz aby kontynuowac";
+                getch();
+                system("cls");
+                break;
+            }
+            liczby[0]=L10;
+            for(int i=0;i<10;i++){
+                wynik[i]=liczby[i]%sys_na;
+                liczby[i+1]=liczby[i]/sys_na;
+            }
+            system("cls");
+            cout << "KALKULATOR" << endl << L1_s << " w systemie " << sys_z << " przeliczone na system " << sys_na << " jest rowne ";
+            for(int i=9;i>=0;i--){
+                if(wynik[i]==0 && pzero==false){}
+                else{
+                    pzero=true;
+                    cout << wynik[i];
+                }
+            }
+            cout << endl << endl << "nacisnij klawisz aby kontynuowac";
+            getch();
+            system("cls");
+        break;
+        case 'k':
+            koniec=true;
+        break;
+        default:
+            cout << "wpisz prawidlowa wartosc" << endl << "nacisnij klawisz aby kontynuowac";
+            getch();
+            system("cls");
+        break;
+    }
+    }while(koniec==false);
+    return 0;
+}
